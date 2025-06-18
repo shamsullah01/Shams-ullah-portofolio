@@ -1,7 +1,10 @@
+/* Layout Styles */
 .site-layout-content {
   min-height: 280px;
   padding: 24px;
   background: #fff;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .logo {
@@ -17,6 +20,7 @@
   margin: 16px 0 16px 24px;
 }
 
+/* Home Page Styles */
 .home-page {
   text-align: center;
   padding: 2rem;
@@ -25,9 +29,126 @@
 .home-page h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  font-weight: 600;
+  color: #1d1d1d;
 }
 
 .home-page p {
   font-size: 1.2rem;
-  color: #666;
+  color: #555;
+  margin-bottom: 3rem;
+}
+
+/* Card Styles */
+.ant-card {
+  border-radius: 12px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+  transition: all 0.3s ease;
+  height: 100%;
+  border: none !important;
+}
+
+.ant-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12) !important;
+}
+
+.ant-card-head {
+  border-bottom: none !important;
+}
+
+.ant-card-head-title {
+  font-weight: 500;
+  font-size: 1.25rem;
+  padding: 16px 0 !important;
+}
+
+.ant-card-body {
+  padding: 16px 24px 24px !important;
+}
+
+/* Icon Styles */
+.anticon {
+  color: #1890ff;
+  font-size: 1.25rem;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .home-page {
+    padding: 1.5rem;
+  }
+  
+  .home-page h1 {
+    font-size: 2rem;
+  }
+  
+  .home-page p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .ant-card {
+    margin-bottom: 24px;
+  }
+}
+
+/* Card Hover Effects */
+.about-card:hover {
+  border: 1px solid #001529 !important;
+  box-shadow: 0 4px 12px rgba(0, 21, 41, 0.2) !important;
+}
+
+.about-card:hover .ant-card-head {
+  background: #001529;
+}
+
+.about-card:hover .ant-card-head-title,
+.about-card:hover .anticon {
+  color: white !important;
+}
+
+.projects-card:hover {
+  border: 1px solid #d48806 !important;
+  box-shadow: 0 4px 12px rgba(212, 136, 6, 0.2) !important;
+}
+
+.projects-card:hover .ant-card-head {
+  background: #d48806;
+}
+
+.projects-card:hover .ant-card-head-title,
+.projects-card:hover .anticon {
+  color: white !important;
+}
+
+.contact-card:hover {
+  border: 1px solid #389e0d !important;
+  box-shadow: 0 4px 12px rgba(56, 158, 13, 0.2) !important;
+}
+
+.contact-card:hover .ant-card-head {
+  background: #389e0d;
+}
+
+.contact-card:hover .ant-card-head-title,
+.contact-card:hover .anticon {
+  color: white !important;
+}
+
+
+@media (max-width: 768px) {
+  .site-layout-content {
+    padding: 16px;
+  }
+  
+  .home-page {
+    padding: 1rem;
+  }
+  
+  .home-page h1 {
+    font-size: 1.75rem;
+  }
 }
